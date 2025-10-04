@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario con CSS</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(206, 196, 241);
+        }
+
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;            
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;   
+            background-color: white;         
+        }
+
+        label{
+            padding: 12px 12px 12px 0px;
+            display: block;
+            color: black;
+        }
+        
+        select{                                    
+            height: 40px;
+        }
+
+        button{
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 12px 32px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 16px 0px;
+        }
+
+        button:hover{
+            background-color: #45a049;
+        }
+
+        input:focus,select:focus{
+            border: 5px solid lightblue;
+        }
+
+        ::placeholder{
+            color: rgb(106, 112, 112);
+        }
+
+        .container{
+            border-radius: 4px;
+            background-color: #f2f2f2;
+            padding: 25px;
+            width: 500px;
+            margin: auto;
+            
+        }
+
+    </style>
+    <body> 
+        <h1>Formulario estilizado con css</h1>
+        <div class="container">
+            <form action="http://localhost:3000" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Introduzca tu Nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Introduzca tu Apellido" required>
+                
+                <label for="pais">Seleccione el País</label>
+                <select name="pais" id="pais">
+                    <option disabled selected hidden>Seleccione</option>
+                    <option>Colombia</option>
+                    <option>Perú</option>
+                    <option>México</option>
+                    <option>Venezuela</option>
+                    <option>Bolivia</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+    </body>
+    
+    </html>
