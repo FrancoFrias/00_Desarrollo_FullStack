@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';    
+}
+
+html{
+    font-size: 62.5%;    
+}
+
+body{
+    font-size: 1.9rem;
+    background: url(/imagenes/3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.form{
+    width: 50%;
+    min-width: 300px;
+    background: rgba(0, 0, 0, 0.491);
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    color: #2755c2;
+}
+
+h1{
+    text-align: center;
+    color: 2755c2;
+    padding-bottom: 16px;
+    font-weight: 500;
+}
+
+.header span{
+    color: #fff;
+}
+
+.form__input{
+    width: 100%;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #2756c265;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.form__text{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #2755c2;
+    color: #fff;
+}
+
+.form__text::placeholder{
+    font-size: 1.4rem;    
+}
+
+.form__label{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.enviar{
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    outline: 0;
+    border: none;
+    background: #2755c2;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.enviar:hover{
+    background: #3364d68b;
+}
+
+
+
